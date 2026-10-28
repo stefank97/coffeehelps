@@ -1,0 +1,22 @@
+name: Spellcheck
+
+on:
+  push:
+    paths:
+      - "README.md"
+  pull_request:
+    paths:
+      - "README.md"
+
+jobs:
+  typos:
+    name: Check README spelling
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run typos
+        uses: crate-ci/typos@v1
+        with:
+          files: ./README.md
