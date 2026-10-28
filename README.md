@@ -4,5 +4,4 @@ Life happens
 
 
 
-Stefan ist voll cool. Kauf mir einen Kaffee.
-
+Stefan is incredibly cool. Buy me a coffee
